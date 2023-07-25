@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+	<title>Grace & Truth Youth</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Marck Script">
+    <style>
+      .fanciful-font-set-size {
+        font-family: 'Marck Script', serif;
+        font-size: 15.6px;
+      }
+      .fanciful-font {
+        font-family: 'Marck Script', serif;
+      }
+       body {
+		margin: 0;
+		min-height: 100vh;
+		display: flex;
+		flex-flow: column;
+	}
+
+    </style>
+
+	<script type="text/javascript">
+		function isLivestream() {
+			var date = new Date();
+			var day = date.getDay();
+			var hour = date.getHours();		
+			if (day == 0 || day == 6 || (hour > 10 && hour < 12)) {
+				// Livestream is over/not started.
+				document.getElementById("NavbarSermonLink").innerHTML = "Morning Worship Livestream"
+				document.getElementById("SmallNavbarSermonLink").innerHTML = "Morning Worship Livestream"
+				return false;
+			}
+			// Livestream is active/starting/recent.
+			return true;
+		}
+		window.onload = isLivestream;
+	</script>
+</head>
+
+<style>
+	.w3-theme-l5 {color:#000 !important; background-color:#ffe8ec !important}
+	.w3-theme-l4 {color:#000 !important; background-color:#feb3c0 !important}
+	.w3-theme-l3 {color:#fff !important; background-color:#fd6881 !important}
+	.w3-theme-l2 {color:#fff !important; background-color:#fd1c41 !important}
+	.w3-theme-l1 {color:#fff !important; background-color:#ca0223 !important}
+	.w3-theme-d1 {color:#fff !important; background-color:#720114 !important}
+	.w3-theme-d2 {color:#fff !important; background-color:#650112 !important}
+	.w3-theme-d3 {color:#fff !important; background-color:#58010f !important}
+	.w3-theme-d4 {color:#fff !important; background-color:#4c010d !important}
+	.w3-theme-d5 {color:#fff !important; background-color:#3f010b !important}
+	
+	.w3-theme-light {color:#000 !important; background-color:#ffe8ec !important}
+	.w3-theme-dark {color:#fff !important; background-color:#3f010b !important}
+	.w3-theme-action {color:#fff !important; background-color:#3f010b !important}
+	
+	.w3-theme {color:#fff !important; background-color:#800116 !important}
+	.w3-text-theme {color:#720114 !important}
+	.w3-border-theme {border-color:#800116 !important}
+	
+	.w3-hover-theme:hover {color:#fff !important; background-color:#800116 !important}
+	.w3-hover-text-theme:hover {color:#800116 !important}
+	.w3-hover-border-theme:hover {border-color:#800116 !important}
+	.w3-navbar-no-hover:hover {color:#fff !important; background-color:#650112 !important}
+
+	.mySlides {display:none}
+	.w3-left-arrow, .w3-right-arrow, .w3-badge {cursor:pointer}
+	.w3-badge {height:13px;width:13px;padding:0}
+
+</style>
+
+<body id="myPage" style="background-color:#f1f1ec">
+
+
+<!-- Navbar -->
+<div class="w3-top">
+ <div class="w3-bar w3-theme-d2 w3-left-align">
+  <a class="w3-bar-item w3-button w3-hide-large w3-left w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+  <a class="w3-bar-item w3-button w3-hide-large w3-left w3-navbar-no-hover w3-theme-d2 fanciful-font-set-size" href="home.html">Englewood Church of Grace and Truth</a>
+  <a class="w3-bar-item w3-button w3-theme w3-hide-small w3-hide-medium" href="home.html"><i class="fa fa-home w3-margin-right"></i>Home</a>
+  <div class="w3-dropdown-hover w3-hide-small w3-hide-medium">
+    <button class="w3-button w3-hover-white"><a href="#contact" style="text-decoration:none" class="  w3-hide-small w3-hover-white">About</a> <i class="fa fa-caret-down"></i></button>     
+    <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+      <a href="about.html" class="w3-bar-item w3-button">About Us</a>
+      <a href="leadership.html" class="w3-bar-item w3-button">Leadership</a>
+      <a href="statement-of-faith.html" class="w3-bar-item w3-button">Statement of Faith</a>
+      
+    </div>
+  </div>
+  <div class="w3-dropdown-hover w3-hide-small w3-hide-medium">
+    <button class="w3-button w3-hover-white">Ministries <i class="fa fa-caret-down"></i></button>     
+    <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+      <a href="rooted-in-grace.html" class="w3-bar-item w3-button">Rooted in Grace Classes</a>
+      <a href="missions.html" class="w3-bar-item w3-button">Missions Support</a>
+      <a href="grace-and-truth-youth.html" class="w3-bar-item w3-button">Grace & Truth Youth</a>
+      <a href="grace-and-truth-kids.html" class="w3-bar-item w3-button">Grace & Truth Kids</a>
+      <a href="vbs.html" class="w3-bar-item w3-button">VBS</a>
+      <a href="mens-leadership.html" class="w3-bar-item w3-button">Men's Leadership Training</a>
+      <a href="ladies-of-grace.html" class="w3-bar-item w3-button">Ladies of Grace</a>
+      <a href="men-of-truth.html" class="w3-bar-item w3-button">Men of Truth</a>
+    </div>
+  </div>
+  <div class="w3-dropdown-hover w3-hide-small w3-hide-medium">
+    <button class="w3-button w3-hover-white">Sermons <i class="fa fa-caret-down"></i></button>     
+    <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+      <a href="https://www.youtube.com/channel/UC2vDCKigD9TTU3Ea6ISTfWg/videos" target="_blank" class="w3-bar-item w3-button">Video</a>
+      <a href="http://graceandtruth.sermon.net/main" target="_blank" class="w3-bar-item w3-button">Audio</a>
+    </div>
+  </div>
+  <div class="w3-dropdown-hover w3-hide-small w3-hide-medium">
+    <button class="w3-button w3-hover-white">Resources <i class="fa fa-caret-down"></i></button>     
+    <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+      <a href="https://www.youtube.com/channel/UCbeElIbHea4WhvNPUZkGqfA" target="_blank" class="w3-bar-item w3-button">Highlight Videos</a>
+      <a href="https://open.spotify.com/playlist/6tAz1sktWVjGuZsuu5GtPq?si=02c6660e35084408" target="_blank" class="w3-bar-item w3-button">Music</a>
+    </div>
+  </div>
+  <a href="https://www.youtube.com/watch?v=iOZVQ-TKS1I" target="_blank" class="w3-bar-item w3-button w3-right w3-hovertea w3-hide-small" title="Weekly Sermon" id="NavbarSermonLink">Morning Worship Recording</a>
+  <a href="contact.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">Contact</a>
+ </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large">
+    <a href="home.html" class="w3-bar-item w3-button">Home</a>
+    <a href="about.html" class="w3-bar-item w3-button">About Us</a>
+    <a href="contact.html" class="w3-bar-item w3-button">Contact</a>
+    <a href="leadership.html" class="w3-bar-item w3-button">Leadership</a>
+    <a href="statement-of-faith.html" class="w3-bar-item w3-button">Statement of Faith</a>
+    <a href="ministries.html" class="w3-bar-item w3-button">Ministries</a>
+    <a href="sermons-and-resources.html" class="w3-bar-item w3-button">Sermons and Resources</a>
+    <a href="https://www.youtube.com/watch?v=iOZVQ-TKS1I" target="_blank" class="w3-bar-item w3-button w3-right w3-hovertea w3-hide-medium" title="Weekly Sermon" id="SmallNavbarSermonLink">Morning Worship Recording</a>
+  </div>
+</div>
+<br><br>
+
+<main>
+
+<!-- Page Title -->
+<div class="title-large" class="w3-hide-small w3-hide-medium">
+	<div class="w3-quarter w3-hide-small w3-hide-medium">
+		<p></p>
+	</div>
+	<div class="w3-center w3-half w3-hide-small w3-hide-medium">
+		<h1 class="fanciful-font w3-text-theme">Grace & Truth Youth</h1>
+		<h4>Students in the 7<sup>th</sup> through 12<sup>th</sup> grades</h4>
+	</div>
+	<div class="w3-rest w3-hide-small w3-hide-medium">
+		<p></p>
+	</div>
+</div>
+<div class="title-small-medium" class="">
+	<div class="w3-center w3-hide-large">
+		<h1 class="fanciful-font w3-text-theme"><strong>Grace & Truth Youth</strong></h1>
+		<h4>Students in the 7<sup>th</sup> through 12<sup>th</sup> grades</h4>
+	</div>
+</div>
+
+<!-- Schedule for past and current week's classes -->
+<!--
+<article id="scheduleLegacy">
+	<div class="w3-row-padding">
+		<div class="w3-container w3-theme-d1 w3-half w3-cell" style="border-radius:25px;">
+			<h2 class="w3-padding-large w3-large w3-center">Sunday School - 9:30 A.M.</h2>
+			<div class="w3-row w3-center w3-padding">
+				<div class="w3-col s6">
+					<p class="w3-center"><strong>This Sunday - July 23, 2023</strong></p>
+					<p class="w3-center">Genesis 3:1-15 (pt. 2)</p>
+					<p class="w3-center w3-medium"><i>Kyle Miller</i></p>
+				</div>
+				<div class="w3-col s6">
+					<p class="w3-center"><strong>Last Sunday - July 16, 2023</strong></p>
+					<p class="w3-center">Genesis 3:1-15 (pt. 1)</p>
+					<p class="w3-center w3-medium"><i>Kyle Miller</i></p>
+				</div>
+			</div>
+		</div>
+		<div class="w3-container w3-theme-d1 w3-half w3-cell" style="border-radius:25px;">
+			<h2 class="w3-padding-large w3-large w3-center">Wednesday Night Study - 6:30 P.M.</h2>
+			<div class="w3-row w3-center w3-padding">
+				<div class="w3-col s6">
+					<p class="w3-center"><strong>This Wednesday - July 26, 2023</strong></p>
+					<p class="w3-center">Sermon Preparation</p>
+					<p class="w3-center w3-medium"><i>Jordan Couch</i></p>
+				</div>
+				<div class="w3-col s6">
+					<p class="w3-center"><strong>Last Wednesday - July 19, 2023</strong></p>
+					<p class="w3-center">Resolved</p>
+					<p class="w3-center w3-medium"><i>Jordan Couch</i></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</article>
+-->
+<article id="schedule">
+	<div class="w3-row-padding w3-cell-row w3-hide-small">
+		<div class="w3-container w3-theme-d1 w3-cell w3-margin w3-center" style="border:5px solid #f1f1ec; border-radius:25px;width:45%">
+			<h2 class="w3-padding-large w3-large w3-center">Sunday School - 9:30 A.M.</h2>
+			<div class="w3-row w3-center w3-padding">
+				<div class="w3-col s6">
+					<p class="w3-center"><strong>This Week - July 23, 2023</strong></p>
+					<p class="w3-center">Genesis 3:1-15 (pt. 2)</p>
+					<p class="w3-center w3-medium"><i>Kyle Miller</i></p>
+				</div>
+				<div class="w3-col s6">
+					<p class="w3-center"><strong>Last Week - July 16, 2023</strong></p>
+					<p class="w3-center">Genesis 3:1-15 (pt. 1)</p>
+					<p class="w3-center w3-medium"><i>Kyle Miller</i></p>
+				</div>
+			</div>
+		</div>
+		<div class="w3-container w3-theme-d1 w3-cell w3-margin" style="border:5px solid #f1f1ec; border-radius:25px;width:45%;">
+			<h2 class="w3-padding-large w3-large w3-center">Wednesday Night Study - 6:30 P.M.</h2>
+			<div class="w3-row w3-center w3-padding">
+				<div class="w3-col s6 w3-half">
+					<p class="w3-center"><strong>This Week - July 26, 2023</strong></p>
+					<p class="w3-center">Sermon Preparation</p>
+					<p class="w3-center w3-medium"><i>Jordan Couch</i></p>
+				</div>
+				<div class="w3-col s6 w3-half">
+					<p class="w3-center"><strong>Last Week - July 19, 2023</strong></p>
+					<p class="w3-center">The Resolutions of Jonathan Edwards</p>
+					<p class="w3-center w3-medium"><i>Jordan Couch</i></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="w3-row-padding w3-hide-medium w3-hide-large">
+		<div class="w3-container w3-theme-d1" style="border:5px solid #f1f1ec; border-radius:25px;">
+			<h2 class="w3-padding-large w3-large w3-center">Sunday School - 9:30 A.M.</h2>
+			<div class="w3-row w3-center w3-padding">
+				<div class="w3-col s6">
+					<p class="w3-center"><strong>This Week - July 23, 2023</strong></p>
+					<p class="w3-center">Genesis 3:1-15 (pt. 2)</p>
+					<p class="w3-center w3-medium"><i>Kyle Miller</i></p>
+				</div>
+				<div class="w3-col s6">
+					<p class="w3-center"><strong>Last Week - July 16, 2023</strong></p>
+					<p class="w3-center">Genesis 3:1-15 (pt. 1)</p>
+					<p class="w3-center w3-medium"><i>Kyle Miller</i></p>
+				</div>
+			</div>
+		</div>
+		<div class="w3-container w3-theme-d1" style="border:5px solid #f1f1ec; border-radius:25px;">
+			<h2 class="w3-padding-large w3-large w3-center">Wednesday Night Study - 6:30 P.M.</h2>
+			<div class="w3-row w3-center w3-padding">
+				<div class="w3-col s6 w3-half">
+					<p class="w3-center"><strong>This Week - July 26, 2023</strong></p>
+					<p class="w3-center">Sermon Preparation</p>
+					<p class="w3-center w3-medium"><i>Jordan Couch</i></p>
+				</div>
+				<div class="w3-col s6 w3-half">
+					<p class="w3-center"><strong>Last Week - July 19, 2023</strong></p>
+					<p class="w3-center">The Resolutions of Jonathan Edwards</p>
+					<p class="w3-center w3-medium"><i>Jordan Couch</i></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</article>
+
+<!-- Information about the youth group -->
+<article id="about">
+	<div class="w3-row-padding">
+		<div class="w3-container w3-quarter">
+			<div class="w3-display-container w3-hide-small w3-hide-medium">
+				<p></p>
+				<img src="images/open_bible.png" style="width:100%; max-width:500px" class="w3-round w3-normal w3-display-bottom-left" alt="Open Bible Image">
+			</div>
+		</div>
+		<div class="w3-container w3-rest">
+			<p class="w3-padding-large w3-large">Our goal is to see the truths of Scripture taught in the lives of students, and the gospel clearly communicated.  We desire a growth in spiritual maturity so that even from a young age they might set an example of what it looks like to live a Christ exalting life. The desire of each class is to magnify Christ through faithful Biblical teaching and loving fellowship. In addition to the in depth studies the teens engage in on Wednesday nights and Sunday mornings, we also have various events throughout the year! Check out upcoming events on the calendar!</p>
+		</div>
+	</div>
+</article>
+
+<!-- Main verse for the youth group -->
+<article id="verse">
+	<div class="w3-container w3-theme-d1">
+		<div class="w3-panel w3-padding-large w3-leftbar w3-light-grey" style="border-radius:20px">
+			<p class="w3-xlarge fanciful-font">"Let no one despise you for your youth, but set the believers an example in speech, in conduct, in love, in faith, in purity."</p>
+			<a href="https://www.biblegateway.com/passage/?search=1%20Timothy%204:12&version=ESV" target="_blank" style="text-decoration:none;">1 Timothy 4:12</a>
+		</div>
+	</div>
+</article>
+
+<!-- Photo gallery (needs real pictures) -->
+<article id="photo-gallery">
+	<div class="w3-content w3-display-container w3-card" style="max-width:400px; border-radius:25px">
+		<img class="mySlides" src="images/JordanCouch.JPG" style="width:100%">
+		<div class="myCaptions w3-theme-d1 w3-display-bottomleft w3-container">Jordan Couch</div>
+		<img class="mySlides" src="images/BenjaminLeach.JPG" style="width:100%">
+		<div class="myCaptions w3-theme-d1 w3-display-bottomleft w3-container">Benjamin Leach</div>
+		<img class="mySlides" src="images/BrandonWombold.JPG" style="width:100%">
+		<div class="myCaptions w3-theme-d1 w3-display-bottomleft w3-container">Brandon Wombold</div>
+		<img class="mySlides" src="images/logo_basic.png" style="width:100%">
+		<div class="myCaptions w3-theme-d1 w3-display-bottomleft w3-container">Englewood Church of Grace and Truth Logo</div>
+		<div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle w3-padding" style="width:100%">
+			<div class="w3-left-arrow w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+			<div class="w3-right-arrow w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+			<span class="w3-badge photoGallery w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+			<span class="w3-badge photoGallery w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+			<span class="w3-badge photoGallery w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+			<span class="w3-badge photoGallery w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>
+		</div>
+	</div>
+	
+</article>
+
+</main>
+
+<footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
+  <h4>Follow Us</h4>
+  <a class="w3-button w3-large w3-theme" href="https://www.facebook.com/EnglewoodChurchOfGraceAndTruth/" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a>
+  <a class="w3-button w3-large w3-theme" href="https://www.youtube.com/channel/UCbeElIbHea4WhvNPUZkGqfA" target="_blank" title="Youtube"><i class="fa fa-youtube"></i></a>
+  <a class="w3-button w3-large w3-theme w3-hide-small" href="https://open.spotify.com/playlist/6tAz1sktWVjGuZsuu5GtPq" target="_blank" title="Spotify"><i class="fa fa-spotify"></i></a>
+  <p>Developed by <a href="https://aarontook.github.io/" target="_blank" style="text-decoration:none">AaronTook</a><br>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" style="text-decoration:none">w3.css</a></p>
+
+</footer>
+
+<script>
+// Script for side navigation
+function w3_open() {
+  var x = document.getElementById("mySidebar");
+  x.style.width = "300px";
+  x.style.paddingTop = "10%";
+  x.style.display = "block";
+}
+
+// Close side navigation
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+
+// Used to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+
+// Scripts for Photo Gallery
+var slideIndex = 1;
+showDivs(slideIndex);
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var z = document.getElementsByClassName("myCaptions");
+  var dots = document.getElementsByClassName("photoGallery");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+    z[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";
+  z[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " w3-white";
+}
+</script>
+
+</body>
+</html>
+
